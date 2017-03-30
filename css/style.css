@@ -265,8 +265,13 @@ nav ul li:last-child{
 	text-align: left!important;
 }
 
-.nombres li h4{
-	color:#b0b0b0;
+.nombres li h4 a{
+	color:#fff;
+}
+
+.nombres li h4 a:hover{
+	color:#FFA401;
+	text-decoration: none;
 }
 
 .nombres__movil{
@@ -355,7 +360,7 @@ nav ul li:last-child{
 .search__contenido input:-moz-placeholder { color: #c7c7c7;font-size: 0.9em; }
 
 .selector__categoria{
-	background-color: #A03021;
+	background-color: #FFA401;
 	height: 30px;
 	margin-left: -3em;
 	text-align: center;
@@ -363,7 +368,7 @@ nav ul li:last-child{
 }
 
 .selector__categoria select{
-	background-color: #A03021;
+	background-color: #FFA401;
 	border:0px;
 	color:#fff;
 	text-align: center;
@@ -375,7 +380,7 @@ nav ul li:last-child{
 }
 
 .categoria__title span{
-	color:#A03021;
+	color:#FFA401;
 	font-size: 1.1em;
 	font-weight: 600;
 	padding-top: 1px;
@@ -425,7 +430,7 @@ nav ul li:last-child{
 }
 
 .cargar__mas a{
-	color:#A03021;
+	color:#FFA401;
 	display: block;
 	font-size: 0.7em;
 	font-weight: 700;
@@ -449,7 +454,7 @@ nav ul li:last-child{
 }
 
 .back{
-	color:#A03021;
+	color:#FFA401;
 	display: block;
 	font-size: 0.8em;
 	margin-bottom: 1em;
@@ -467,7 +472,7 @@ nav ul li:last-child{
 }
 
 .tienda__title span{
-	color:#A03021;
+	color:#FFA401;
 	font-size: 1.8em;
 	font-weight: 600;
 	padding-top: 5px;
@@ -545,14 +550,14 @@ nav ul li:last-child{
 }
 
 .btn__promociones{
-	background-color: #A03021;
+	background-color: #FFA401;
 	border-radius: 3px;
 	color:#fff;
 	padding: 0.2em 3.3em;
 }
 
 .detalle__tienda--derecha .cargar__mas a{
-	color:#A03021;
+	color:#FFA401;
 	display: block;
 	font-size: 0.7em;
 	font-weight: 700;
@@ -685,7 +690,7 @@ nav ul li:last-child{
 }
 
 .novedades__info .btn__rojo{
-	background-color:#A03021;
+	background-color:#FF9A22;
 	color:#fff!important;
 	font-size: 1em;
 	font-weight: 500;
@@ -695,7 +700,7 @@ nav ul li:last-child{
 }
 
 .btn__rojo{
-	background-color:#A03021;
+	background-color:#FF9A22;
 	color:#fff!important;
 	font-size: 1em;
 	font-weight: 500;
@@ -728,7 +733,7 @@ nav ul li:last-child{
 }
 
 .novedades__detalle__title span{
-	color:#A03021;
+	color:#FF9A22;
 	font-size: 1.1em;
 	font-weight: 600;
 	padding-top: 1px;
@@ -762,7 +767,7 @@ nav ul li:last-child{
 }
 
 .compartir__detalle h4{
-	color:#A03021;
+	color:#FF9A22;
 	font-size: 0.9em;
 	font-weight: 600;
 }
@@ -812,7 +817,7 @@ nav ul li:last-child{
 }
 
 .btn__rojo__eventos{
-	background-color:#A03021;
+	background-color:#FF9A22;
 	color:#fff!important;
 	font-size: 1em!important;
 	font-weight: 300;
@@ -914,7 +919,7 @@ nav ul li:last-child{
 }
 
 .formulario form button{
-	background-color: #A03021;
+	background-color: #FF9A22;
 	border: 0px;
 	color:#fff;
 	width: 30%;
@@ -943,7 +948,7 @@ nav ul li:last-child{
 }
 
 .calendario__mes h3{
-	color:#A03020;
+	color:#FF9A22;
 	font-size: 2em;
 	margin-top: 5px;
 }
@@ -1011,7 +1016,7 @@ td {
 #day-names td {
   border-right: 0px;
   border-left:1px solid #fff;
-  color:#A03020;
+  color:#FF9A22;
   font-weight: 600;
   width: 14.2857%;
 }
@@ -1065,7 +1070,7 @@ table.week tr:nth-child(2) {
 }
 
 .event.holiday:hover{
-	background-color: #A03020;
+	background-color: #FF9A22;
 	color:#fff;
 	cursor: pointer;
 }
@@ -1119,7 +1124,7 @@ td.event.important {
 }
 
 .promo__item__title{
-	color:#A03022;
+	color:#FF9A22;
 	font-size: 1em;
 	font-weight: 600;
 	margin-top: 2em;
@@ -1225,7 +1230,7 @@ td.event.important {
 }
 
 .restricciones h3{
-	color:#A03021;
+	color:#FF9A22;
 	font-size: 1em;
 	font-weight: 600;
 }
@@ -1734,7 +1739,7 @@ td.event.important {
 
 	.refinar__movil input{
 		background-color: #F7F7F7;
-		border: 1px solid #A03020;
+		border: 1px solid ;
 		padding-left: 5px;
 		margin-top: 7px;
 		width: 90%;
@@ -2098,7 +2103,7 @@ td.event.important {
 	}
 	
 	.event.holiday h3{
-		background-color: #A03020;
+		background-color: #FF9A22;
 		border-radius: 50%;
 		color:#fff;
 		padding: 10px 5px;
@@ -2108,7 +2113,7 @@ td.event.important {
 	}
 
 	.event.holiday h3:hover{
-		background-color: #A03020;
+		background-color: #FF9A22;
 		border-top-left-radius: 40px;
 		border-top-right-radius: 40px;
 		color:#fff;
@@ -2121,7 +2126,7 @@ td.event.important {
 	}
 
 	.event.holiday:hover .evento__movil{
-		background-color: #A03020;
+		background-color: #FF9A22;
 		display: block;
 		position: absolute;
 		left: 0%;
@@ -2356,7 +2361,7 @@ td.event.important {
 
 	.refinar__movil input{
 		background-color: #F7F7F7;
-		border: 1px solid #A03020;
+		border: 1px solid #FF9A22;
 		padding-left: 5px;
 		margin-top: 7px;
 		width: 90%;
@@ -2699,7 +2704,7 @@ td.event.important {
 	}	
 	
 	.event.holiday h3{
-		background-color: #A03020;
+		background-color: #FF9A22;
 		border-radius: 50%;
 		color:#fff;
 		padding: 10px 5px;
@@ -2709,7 +2714,7 @@ td.event.important {
 	}
 
 	.event.holiday h3:hover{
-		background-color: #A03020;
+		background-color: #FF9A22;
 		border-top-left-radius: 40px;
 		border-top-right-radius: 40px;
 		color:#fff;
@@ -2722,7 +2727,7 @@ td.event.important {
 	}
 
 	.event.holiday:hover .evento__movil{
-		background-color: #A03020;
+		background-color: #FF9A22;
 		display: block;
 		position: absolute;
 		left: 0%;
