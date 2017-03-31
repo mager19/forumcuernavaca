@@ -12,6 +12,10 @@ body{
 	background-color: #fff;
 }
 
+select {
+    -webkit-appearance:none;
+}
+
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
@@ -1381,7 +1385,7 @@ td.event.important {
 	}
 
 	.news h4 {
-    	font-size: 0.64em;
+    	font-size: 0.6em;
     	margin: 3px;
     	padding-top: 10px;
 	}
