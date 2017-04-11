@@ -1291,6 +1291,10 @@ td.event.important {
 	margin-bottom: 2em;
 }
 
+.detalle__tienda2 .promo__item{
+	display: block;
+}
+
 .promo__item__title{
 	color:#FF9933;
 	font-size: 1em;
@@ -1400,6 +1404,11 @@ td.event.important {
 	margin-top: 2em;
 	margin-left: 5em;
 }
+
+.promociones__detalle .promo__item{
+	display: block;
+}
+
 
 .promociones__detalle .compartir__nuevo {
     margin-left: -1em;
