@@ -38,7 +38,6 @@ select {
 }
 
 .header__right img{
-	max-width: 100%;
 	height: auto;
 	padding: 0 1px;
 }
@@ -185,12 +184,9 @@ nav ul li:last-child img{
 .middle__right{
 	border:3px solid #053361;
 	margin-left: 1px;
-    margin-top: 0.5px;
-}
-
-.middle__right img{
-	max-width: 100%;
-	height: auto;
+	margin-top: 1px; 
+	overflow:hidden; 
+  	height: 195px; 
 }
 
 .news{
@@ -808,7 +804,7 @@ body > section.apps2{
  
 .novedades__imagen img{ 
   width: 545px; 
-  height: 325px; 
+  
 } 
 
 #loadMore {
