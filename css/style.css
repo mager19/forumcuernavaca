@@ -33,14 +33,36 @@ select {
 	height: 42px;
 }
 
+/*Header*/
 .header__left{
-	overflow:hidden;
+	 background: url('../img/header__left__2.png') no-repeat,
+	 			url('../img/header__left__3.png') no-repeat,
+	 			url('../img/header__left__1.jpg') no-repeat;
+    background-size: 38%,60%,100%;
+    background-position: 15px top, 90% 20%,top;
+    height: 480px; 
 }
 
-.header__right img{
-	height: auto;
-	padding: 0 1px;
+.header__left a, .header__right a{
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
+
+.header__right{
+	background:url('../img/header__right.jpg');
+	height: 480px; 
+}
+
+.header__left a{ 
+  height: 100%; 
+  left: 0; 
+  position: absolute; 
+  top: 0; 
+  width: 100%; 
+} 
 
 /*nav*/
 nav{
@@ -182,11 +204,11 @@ nav ul li:last-child img{
 }
 
 .middle__right{
-	border:3px solid #053361;
+    border:0px solid #053361; 
 	margin-left: 1px;
 	margin-top: 1px; 
 	overflow:hidden; 
-  	height: 195px; 
+  	height: 196px; 
 }
 
 .news{
@@ -1563,6 +1585,10 @@ td.event.important {
 	    border-top: 0px solid rgb(223, 223, 223);
 	}
 
+	.navbar{ 
+    	z-index: 6; 
+  	}	 
+
     .navbar-header {
         float: none;
     }
@@ -1748,13 +1774,14 @@ td.event.important {
 	}
 
 	.middle__right {
-	    border: 3px solid #053361;
+    	border: 0px solid #053361; 
 	    margin-left: 1px;
 	    margin-top: 0px;
 	}
 
 	.middle__right img, .header__right img{
 		height: 100%;
+		max-width: 100%;
 	}
 
 
@@ -1789,13 +1816,15 @@ td.event.important {
     	padding: 6px 0px 0px 12px;
 	}
 
-	.header__right img{
-		height: auto;
-	}
+	.header__right { 
+    	background-size: 100%; 
+    	height: 380px; 
+ 	} 
 
-	.header__left img {
-    	width: 105%;
-	}
+	.header__left{ 
+    	background-size: 38%,60%,100%; 
+    	height: 380px; 
+  	}
 
 	body > section.apps2 {
         background-size: 100%;
@@ -1820,6 +1849,20 @@ td.event.important {
 
 
 @media screen and (max-width:1000px) {
+
+	.header__left{ 
+   		background: url('../img/header__left__3.png') no-repeat, 
+           url('../img/header__left__1.jpg') no-repeat; 
+	    background-size:60%,132%; 
+	    background-position:50% 40%,top; 
+	    height: 600px;  
+	}   
+
+	 .header__right{ 
+	    height: 850px; 
+	    background-position: center; 
+	    background-size: cover; 
+  	} 
 	
 	.menu__principal2 {
 	    background-image: url();
@@ -2060,6 +2103,10 @@ td.event.important {
 		content:"|";
 		padding-left: 1em;
 	}
+	
+	.nombres li:last-child:after{ 
+    	display: none; 
+  	} 
 
 	.up__movil img{
 		margin-left: -1.5em;
@@ -2639,7 +2686,30 @@ td.event.important {
 }
 
 @media screen and (max-width:480px) {
+
+	.categoria__item img { 
+      border: 0px solid #c1c1c1; 
+      width: 280px; 
+      height: 150px; 
+  	} 
+   
+   	.header__left {
+    	background-size: 60%,167%;
+	    background-position: 50% 40%,top;
+	    height: 400px;
+	}
+
+	.header__right {
+    	background-size: 100%;
+	    height: 450px;
+	}
 	
+	.nosotros__header p { 
+      padding: 1em 1em; 
+      padding: 1em 1.5em; 
+      text-align: justify; 
+    } 
+
 	.promociones__detalle .compartir__nuevo {
     	margin-right: 0em;
 	}
@@ -2752,7 +2822,7 @@ td.event.important {
 	}
 
 	.nosotros__header p {
-    	padding: 1em 1em;
+    	padding: 1em 1.5em;
     	text-align: justify;
     }
 
@@ -2946,7 +3016,7 @@ td.event.important {
 	}
 
 	.novedades__imagen img{
-		 width: 350px; 
+		 width: 330px; 
       	height: 220px; 
 	}
 
@@ -3273,6 +3343,12 @@ td.event.important {
 
 @media screen and (max-width:380px) {
 	
+	.header__left {
+    	background-size: 60%,167%;
+	    background-position: 50% 40%,top;
+	    height: 350px;
+	}
+
 	.logo img{
 		height: 55px;
 		width: 107%;
@@ -3381,8 +3457,31 @@ td.event.important {
 		width: 270px;
 	}
 
+	  .novedades__imagen img{ 
+    	width: 310px; 
+      	height: 220px; 
+ 	} 
+ 
+
 
 } 
+
+
+@media screen and (max-width:320px) { 
+   
+  .header__left { 
+      background-size: 60%,170%; 
+      background-position: 55% 60%,top; 
+      height: 300px; 
+  } 
+ 
+  .header__right {       
+      height: 300px; 
+  } 
+ 
+} 
+ 
+
 
  .tab-content > .tab-pane:not(.active), 
 .pill-content > .pill-pane:not(.active) {
