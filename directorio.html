@@ -1162,15 +1162,11 @@
 				<!-- /Categoria item -->
 			</div>
 			<!-- /Categoria 2 -->
-		</div>
-			
+		</div>			
 
 			<!-- /Final Categorias -->
 
-			<div class="col-md-12">
-				<div class="cargar__mas">
-					<a href="#" id="loadMore">Cargar más</a>
-				</div>
+			<div class="col-md-12">				
 			</div>
 			
 		</div>
@@ -1328,28 +1324,10 @@
   crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/slick.js"></script>
-<script>$(document).ready(function(){
-  $('.stores').slick({
-		autoplay: false,
-		dots: false,
-		infinite: true,
-  		slidesToShow: 4,
-  		slidesToScroll: 1,
-  		arrows:true,
-  		autoplay:true,
-  		responsive: [
-		    {
-		      breakpoint: 768,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 3,
-		        infinite: true,
-		        
-		      }
-    	}]
-	});
+<script>
 
-  $(".categoria").slice(0, 4).show();
+$(document).ready(function(){
+    $(".categoria").slice(0, 4).show();
     $("#loadMore").on('click', function (e) {
         e.preventDefault();
         $(".categoria:hidden").slice(0, 4).slideDown();
@@ -1360,6 +1338,30 @@
             scrollTop: $(this).offset().top
         }, 1500);
     });
-});</script>
+});
+
+$(document).scroll(function(e){
+
+	    var scrollAmount = $(window).scrollTop();
+	    var documentHeight = $(document).height();
+	    var scrollPercent = (scrollAmount / documentHeight) * 100;
+	    var n = $( ".categoria:hidden" ).length;	
+	    if(scrollPercent > 40 ) {
+	       doSomething();	       
+	    }
+
+	    function doSomething() { 
+	    	if(n>0){
+	    		$(".categoria:hidden").slice(0,1).fadeIn( "slow" );  		
+	    	}
+
+	    	$('html,body').animate({
+            scrollTop: $(this).offset().top
+        	}, 1500);
+	    }
+});
+
+</script>
+
 </body>
 </html>

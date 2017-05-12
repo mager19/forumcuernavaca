@@ -823,6 +823,11 @@ body > section.apps2{
   display: none; 
   margin-top: 1.5em; 
 } 
+
+.evento__lista__item{
+	display: none;
+	margin-top: 1.5em;	
+}
  
 .novedades__imagen img{ 
   width: 545px; 
