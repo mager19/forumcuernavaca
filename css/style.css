@@ -470,12 +470,12 @@ body > section.apps2{
 }
 
 .categoria__item__title{
-	background-image: url("../img/logos/title_item.jpg");
+	background-color: #FF9933;
 	background-size:cover;
 	color:#fff;
 	margin-left: 5%;
-	margin-top: -8px;
-	width: 90%;
+	margin-top: -10px;
+	width: 150px;
 }
 
 .categoria__item__title h4{
@@ -525,6 +525,10 @@ body > section.apps2{
 	line-height: 1.2em;
 	padding: 1em 0;
 }
+
+.solucion__footer{  
+  min-height: 23vh;  
+}  
 
 .back{
 	color:#FF9933;
@@ -789,7 +793,7 @@ body > section.apps2{
 } 
 
 .vista__aerea__info{
-	background-color:rgba(255,153,51,0.2);
+	background-color:#EBEBEB;  
 	height: 350px; 
   	overflow-y: scroll; 
 	
@@ -1703,10 +1707,6 @@ td.event.important {
         font-size: 0.9em;
     }
 
-    .categoria__item__title {
-	    margin-left: 0%;
-    	width: 112%;
-	}
 
 	/*detalle tienda*/
 	.imagen__tienda img{
@@ -1800,6 +1800,10 @@ td.event.important {
 
 @media (max-width: 1199px) {
 
+	.categoria__item__title {  
+    	margin-left: 0%;  
+    }  
+
 	.promociones__detalle .compartir__nuevo {
 	    margin-left: -1em;
 	    text-align: right;
@@ -1860,6 +1864,10 @@ td.event.important {
 
 
 @media screen and (max-width:1000px) {
+	
+	.solucion__footer{  
+    	min-height: 1px;  
+    }
 
 	.header__left{ 
    		background: url('../img/header__left__3.png') no-repeat, 
@@ -2216,17 +2224,9 @@ td.event.important {
     	height: 190px;
     }
 
-    .categoria__item__title {
-    	background-image: url(../img/logos/title_item__movil.jpg);
-   		background-size: cover;
-   		height: 50px;
-	    margin-left: 0%;
-	    width: 100%;
-	}
-
-	.categoria__item__title h4{
+    .categoria__item__title h4{
 		font-size: 1.8em;
-    	padding-top: 10px;
+    	padding: 10px 0;
     }
 	
 	.categoria__item p{
@@ -2904,14 +2904,14 @@ td.event.important {
     	width: 250px;
     }
 
-    .categoria__item__title {
+/*    .categoria__item__title {
     	background-image: url(../img/logos/title_item__movil.jpg);
    		background-size: cover;
    		height: 35px;
     	margin-left: 10%;
     	width: 80%;
 	}
-
+*/
 	.categoria__item__title h4{
 		font-size: 1.3em;
     	margin-left: 0.5em;
