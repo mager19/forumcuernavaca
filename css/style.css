@@ -38,7 +38,7 @@ select {
 	 background: url('../img/header__left__2.png') no-repeat,
 	 			url('../img/header__left__3.png') no-repeat,
 	 			url('../img/header__left__1.jpg') no-repeat;
-    background-size: 38%,60%,100%;
+    background-size: 38%,60%,102%;
     background-position: 15px top, 90% 20%,top;
     height: 480px; 
 }
@@ -186,6 +186,10 @@ nav ul li:last-child img{
 
 .banners{
 	margin-top: 0.5em;
+}
+
+.padding__banner{
+	padding-right: 14px!important;
 }
 
 /*Middle********/
@@ -473,7 +477,7 @@ body > section.apps2{
 	background-color: #FF9933;
 	background-size:cover;
 	color:#fff;
-	margin-left: 5%;
+	margin-left: 6%;
 	margin-top: -10px;
 	width: 150px;
 }
@@ -1095,7 +1099,7 @@ body > section.apps2{
 	margin-bottom: 1.5em;
 }
 
-.formulario form input, .formulario form select{
+/*.formulario form input, .formulario form select{
 	border: 2px solid #959595;
 	float: left;
 	font-size: 0.7em;
@@ -1120,9 +1124,9 @@ body > section.apps2{
 	float: none;
 	margin:0 2%;
 	width: 96%;
-}
+}*/
 
-.formulario form button{
+.formulario div button{
 	background-color: #FF9933;
 	border-radius: 3px;
 	border: 0px;
@@ -1133,12 +1137,12 @@ body > section.apps2{
 	width: 30%;
 }
 
-.formulario form div{
+/*.formulario form div{
 	float: left;
 	margin-top: 0.7em;
 	margin-bottom: 1.5em;
 	margin-left: 0.3em;
-}
+}*/
 
 .contacto__mapa h3{
 	font-size: 1em;
